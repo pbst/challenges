@@ -1,0 +1,41 @@
+rode0day_id: 10
+
+challenges:
+    tcpdumpB:
+        challenge_id: 41
+        architecture: "x86_64"
+        install_dir: "tcpdumpB"
+        binary_path: "bin/tcpdump"
+        binary_arguments: "-nr {input_file}"
+        sample_inputs: ["inputs/seed_sip.pcap", "inputs/seed_usb.pcap"]
+        source_provided: false
+
+    audiofileB:
+        challenge_id: 42
+        architecture: "x86_64"
+        install_dir: "audiofileB"
+        binary_path: "bin/audiofile"
+        binary_arguments: "{input_file} /tmp/out.mp3 format aiff"
+        sample_inputs: ["inputs/seed8.wav", "inputs/seed16.wav"]
+        source_provided: false
+
+    tcpdumpS:
+        challenge_id: 43
+        architecture: "x86_64"
+        install_dir: "tcpdumpS"
+        binary_path: "built/bin/tcpdump"
+        binary_arguments: "-nr {input_file}"
+        sample_inputs: ["inputs/seed_sip.pcap", "inputs/seed_usb.pcap"]
+        source_provided: true
+        source_path: "src"
+
+    audiofileS:
+        challenge_id: 44
+        architecture: "x86_64"
+        install_dir: "audiofileS"
+        binary_path: "built/bin/audiofile"
+        binary_arguments: "{input_file} /tmp/out.mp3 format aiff"
+        sample_inputs: ["inputs/seed8.wav", "inputs/seed16.wav"]
+        source_provided: true
+        source_path: "src"
+

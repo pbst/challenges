@@ -1,0 +1,19 @@
+rode0day_id: 9001
+
+challenges:
+    xfile1:
+        challenge_id: 42001
+        architecture: "x86"
+        install_dir: "xfile1"
+        binary_path: "built/bin/file"
+        binary_arguments: "-m {install_dir}/share/misc/magic.mgc {input_file}"
+        source_provided: true
+        source_path: "src"
+    xtoy1:
+        challenge_id: 42002
+        architecture: "x86"
+        install_dir: "xtoy1"
+        binary_path: "built/bin/toy"
+        binary_arguments: "{input_file}"
+        source_provided: true
+        source_path: "src"
